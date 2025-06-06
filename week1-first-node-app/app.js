@@ -1,14 +1,30 @@
-const http = require("http"); // load http module
+const http = require("http"); // Load the built-in HTTP module
+const fs = require("fs"); // Load the built-in File System module
 
-// create a basic server
+// Create a basic HTTP server
 const server = http.createServer((req, res) => {
-  res.statusCode = 200; // success code
-  res.setHeader("Content-Type", "text/plain"); // plain text response
-  res.end("Hello, World! This is my first node js app"); // send message
+  res.statusCode = 200;
+  res.setHeader("Content-Type", "text/html"); // Set response type to HTML
+
+  // Read the index.html file and send it as response
+  fs.readFile("index.html", (error, data) => {
+    if (error) {
+      res.statusCode = 404;
+      res.write("Error: File Not Found!");
+    } else {
+      res.write(data);
+    }
+    res.end();
+  });
 });
 
-const port = 8000; // port to listen on
+const port = 8000;
 
-server.listen(port, () => {
-  console.log(`Server is listening on http://localhost:${port}`);
+// Start the server and handle potential startup errors
+server.listen(port, (error) => {
+  if (error) {
+    console.log(`Something went wrong: ${error}`);
+  } else {
+    console.log(`Server is listening on http://localhost:${port}`);
+  }
 });

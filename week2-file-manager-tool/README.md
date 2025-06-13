@@ -44,12 +44,12 @@ After starting the server, open these links in your browser:
 
 ### ➕ Create a file
 
-[http://localhost:4000/create?filename=test.txt&content=HelloWorld]
+[http://localhost:4000/create?filename=test.txt&content=HelloWorld](http://localhost:4000/create?filename=test.txt&content=HelloWorld)
 
 ### 📄 Read the file
 
-[http://localhost:4000/read?filename=test.txt]
+[http://localhost:4000/read?filename=test.txt](http://localhost:4000/read?filename=test.txt)
 
 ### 🗑️ Delete the file
 
-[http://localhost:4000/delete?filename=test.txt]
+[http://localhost:4000/delete?filename=test.txt](http://localhost:4000/delete?filename=test.txt)

@@ -1,0 +1,12 @@
+{
+  "name": "file-manager-tool",
+  "version": "1.0.0",
+  "description": "Week 2 Node.js Project for Celebal Internship - File Management Tool",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Aniket Yadav",
+  "license": "ISC",
+  "keywords": ["nodejs", "file-management", "celebal-internship", "week2"]
+}

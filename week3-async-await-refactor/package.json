@@ -1,0 +1,11 @@
+{
+  "name": "week3-async-await-refactor",
+  "version": "1.0.0",
+  "main": "promiseVersion.js",
+  "scripts": {
+    "start": "node promiseVersion.js"
+  },
+  "author": "Aniket Yadav",
+  "license": "ISC",
+  "description": "Week 3 Node.js Celebal Internship - Refactor Callback Code to Promises and Async/Await"
+}

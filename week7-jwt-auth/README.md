@@ -36,7 +36,7 @@ week7-jwt-auth-api/
 ### 1. Clone the repository or extract the zip
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Aniket7818/CSI_Projects/tree/main/week7-jwt-auth
 cd week7-jwt-auth-api
 ```
 
